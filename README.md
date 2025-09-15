@@ -76,7 +76,7 @@ __2.__ Save the script (replace the original version) and try clicking the _Play
 
 
 ### Making Things More Interesting
-__1.__ Select Main Cmaera in the Hierarchy pane.
+__1.__ Select Main Camera in the Hierarchy pane.
 
 __2.__ Uncheck the _chekcbox_ to teh left of the name of the _HelloWorld (Script)_ component in the INspector pane (by clicking it)
 
