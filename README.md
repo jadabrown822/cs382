@@ -99,4 +99,4 @@ __7.__ Click the _Play_ button, and after a brief pause as Unity gets ready to r
 * The default gravity of -9.8 = 9.8 m/s^2 int the downward (negative y) direction.
 * An average human character is about 2 units (2 meters) tall.
 
-__8.__Click the _Play_ button again to stop the simulation.
+__8.__ Click the _Play_ button again to stop the simulation.
