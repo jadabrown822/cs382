@@ -16,7 +16,7 @@ __3.__ Double-click the name of the icon of the _HelloWorld_ script to launch VS
 __4.__ Click mouse on line 10 to place the curosr there, and ehter the code __print("Hello World");__ into line 10 of VS scipt. Make sure to spell and captialize everything correctly and put a semicolon (;) at the end of the line.
 
 
-ruby```
+```ruby
   // HelloWrold.cs
   
   using System.Collections;
