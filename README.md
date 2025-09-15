@@ -47,3 +47,29 @@ __8.__ Click _Main Camera_ in the Hierarchy pane, _HelloWorld (Script)_ is liste
 __9.__ Click the _Play_ button (the triangle facing the right at the top of the Unity window).
 
 __10.__ Click the _Play_ buttong in Unity once more ot exit play mode
+
+
+### Start() versus Update()
+__1.__ Go back to VS and edit code
+
+```ruby
+  // HelloWrold.cs
+  
+  using System.Collections;
+  using System.Collections.Generic;
+  using UnityEngine;
+  
+  public class HelloWorld : MonoBehavior {
+    // Start is called before the first frame update
+    void Start() {
+      // print("Hello World"); // This line is now ignored
+    }
+  
+    // Update is called once per frame
+    void Update() {
+      print("Hello World");
+    }
+  }
+```
+
+__2.__ Save the script (replace the original version) and try clicking the _Play_ button again.
