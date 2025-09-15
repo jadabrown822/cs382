@@ -17,19 +17,19 @@ __4.__ Click mouse on line 10 to place the curosr there, and ehter the code __pr
 
 
 ruby```
-// HelloWrold.cs
-
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class HelloWorld : MonoBehavior {
-  // Start is called before the first frame update
-  void Start() {
-    print("Hello World");
+  // HelloWrold.cs
+  
+  using System.Collections;
+  using System.Collections.Generic;
+  using UnityEngine;
+  
+  public class HelloWorld : MonoBehavior {
+    // Start is called before the first frame update
+    void Start() {
+      print("Hello World");
+    }
+  
+    // Update is called once per frame
+    void Update() {}
   }
-
-  // Update is called once per frame
-  void Update() {}
-}
 ```
