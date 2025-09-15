@@ -15,7 +15,6 @@ __3.__ Double-click the name of the icon of the _HelloWorld_ script to launch VS
 
 __4.__ Click mouse on line 10 to place the curosr there, and ehter the code __print("Hello World");__ into line 10 of VS scipt. Make sure to spell and captialize everything correctly and put a semicolon (;) at the end of the line.
 
-
 ```ruby
   // HelloWrold.cs
   
@@ -38,5 +37,9 @@ __5.__ Save this scipt by chossing _File > Save_ for the VS menu bar and switch 
 
 __6.__ 
 * Click and hold the name of the _HelloWorld_script in the Project pane, drag over the top of the _Main Camera_ in the scene Hierarchy pane, and release the mouse
-* A circle with a slash will appear until a GameObject to which script can be attached, and the cursor will change to a box with and arrow (the name doesn't folloe the mouse in Windows)
+* A circle with a slash will appear until a GameObject to which script can be attached, and the cursor will change to a box with and arrow (the name doesn't follow the mouse in Windows)
 * Asterisks will appear, __need to save the Scene__
+
+__7.__ Save the Scene by choosing _File > Save_ from the main UNity menu. This causes asterisk to disappear. Dragging the Helloworld script into Main Camera _attatches_ the script to Main Camera as a _component_. All objects appear in the scene Hierarchy pane, are known as _GameObjects_, and GameObjects are made up of components.
+
+__8.__ Click _Main Camera_ in the Hierarchy pane, _HelloWorld (Script)_ is listed as one of Main Camera;s components in the inspector pane.
