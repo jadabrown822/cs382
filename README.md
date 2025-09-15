@@ -12,3 +12,5 @@ __1.__ Click _Create_ button (+) in Project pane and choose _C# Script_. This ad
 __2.__ Name this script _HellowWorld_ and press Return to set the name.
 
 __3.__ Double-click the name of the icon of the _HelloWorld_ script to launch VS, or C# editor. Line 5, the word after __class__ is __HelloWorld__. If deselect the new C# file in Unity before renaming it, might instead be name __NewBehaviorScript__, which needs to be changed to __HelloWorld__ for the script to work properly.
+
+__4.__ Click mouse on line 10 to place the curosr there, and ehter the code __print("Hello World");__ into line 10 of VS scipt. Make sure to spell and captialize everything correctly and put a semicolon (;) at the end of the line.
