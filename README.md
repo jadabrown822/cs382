@@ -43,3 +43,7 @@ __6.__
 __7.__ Save the Scene by choosing _File > Save_ from the main UNity menu. This causes asterisk to disappear. Dragging the Helloworld script into Main Camera _attatches_ the script to Main Camera as a _component_. All objects appear in the scene Hierarchy pane, are known as _GameObjects_, and GameObjects are made up of components.
 
 __8.__ Click _Main Camera_ in the Hierarchy pane, _HelloWorld (Script)_ is listed as one of Main Camera;s components in the inspector pane.
+
+__9.__ Click the _Play_ button (the triangle facing the right at the top of the Unity window).
+
+__10.__ Click the _Play_ buttong in Unity once more ot exit play mode
