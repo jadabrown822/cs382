@@ -36,7 +36,7 @@ __4.__ Click mouse on line 10 to place the curosr there, and ehter the code __pr
 __5.__ Save this scipt by chossing _File > Save_ for the VS menu bar and switch back to Unity (on Windows, _File > Save HelloWorld.cs_).
 
 __6.__ 
-* Click and hold the name of the _HelloWorld_script in the Project pane, drag over the top of the _Main Camera_ in the scene Hierarchy pane, and release the mouse
+* Click and hold the name of the _HelloWorld_ script in the Project pane, drag over the top of the _Main Camera_ in the scene Hierarchy pane, and release the mouse
 * A circle with a slash will appear until a GameObject to which script can be attached, and the cursor will change to a box with and arrow (the name doesn't follow the mouse in Windows)
 * Asterisks will appear, __need to save the Scene__
 
