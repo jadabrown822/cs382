@@ -15,6 +15,10 @@ public class CubeSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Instantiate(cubePrefabVar);
+        // Instantiate(cubePrefabVar);
+
+        GameObject cubeGo = Instantiate<GameObject>(cubePrefabVar);
+        Material mat = cubeGo.GetComponent<Renderer>().material;
+        mat.color = Random.ColorHSV(0, 1, 0.5f, 1, 0.75f, 1);
     }
 }
