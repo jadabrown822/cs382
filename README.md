@@ -186,7 +186,7 @@ __14.__ Save Scene, and then click _Play_
 ### Creating an Environment for the Cubes
 __1.__ Click _Play_ again to stop playback.
 
-__2.__ In Hierarchy_, click the _Create_ pop-up menu (that looks like a __+__) and choose _3D Object > Cube_. Rename this cube _Ground_.
+__2.__ In _Hierarchy_, click the _Create_ pop-up menu (that looks like a __+__) and choose _3D Object > Cube_. Rename this cube _Ground_.
 
 __3.__ Try moving Ground to a Y position of -4 and setting its scale in the X and Z dimensions to 10. Suggestion for positions, rotations, and scales:
 * P:[0, -4, 0]
