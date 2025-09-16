@@ -194,3 +194,25 @@ __3.__ Try moving Ground to a Y position of -4 and setting its scale in the X an
 * S:[20, 1, 20]
 
 __4.__ With _Ground_ (or any GameObject) Selected in the Scene Pane or Hierarchy pane, press the W, E, or R keys to show _gizmos_ that allow Translate (move), Rotate, or Scale the GameObject
+
+
+### Adding a Little Colot
+__1.__ open the CubeSpawner script in VS
+
+__2.__ Replace the existing __Update()__ code with these lines:
+
+```ruby
+  void Update() {
+    // Instantiate(cubePrefabVar);
+  }
+  
+  GameObjact cubeGO = Instantiate<GameObject>(cubePrefabVar);
+  Material mat = cubeGO.GetComponent<Render>().material;
+  mat.color = Random.ColorHSV(0, 1, 0.5f, 1, 0.75f, 1);
+```
+
+__3.__ Save CubeSpawner in VS amd return to Unity
+
+__4.__ Click _Play_
+
+__5.__ As always, save Scene
