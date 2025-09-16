@@ -22,7 +22,7 @@ __4.__ Click mouse on line 10 to place the curosr there, and ehter the code __pr
   using System.Collections.Generic;
   using UnityEngine;
   
-  public class HelloWorld : MonoBehavior {
+  public class HelloWorld : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
       print("Hello World");
@@ -59,10 +59,10 @@ __1.__ Go back to VS and edit code
   using System.Collections.Generic;
   using UnityEngine;
   
-  public class HelloWorld : MonoBehavior {
+  public class HelloWorld : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
-      // print("Hello World"); // This line is now ignored
+      // print("Hello World");  This line is now ignored
     }
   
     // Update is called once per frame
@@ -100,3 +100,84 @@ __7.__ Click the _Play_ button, and after a brief pause as Unity gets ready to r
 * An average human character is about 2 units (2 meters) tall.
 
 __8.__ Click the _Play_ button again to stop the simulation.
+
+
+### Making a Prefab
+A prefab is a reusable element in a project that can be instantiated (cloned into existance) any number of times
+
+* A prefab named _Cube_ had been created inthe Project pane. Indication by tge blue cube iton next to it.
+* The name of the Cube GameObject in the hierarchy has turned blue. If the GameObject has a blue name in the hierarchy it means that the GameObject is an instance of a prefab (which is like a copy make from the prefab mold).
+
+Just for the sake of clarity, rename the Cube Prefab int eh Project pane to _Cube Prefab_
+
+__1.__ Click once on the _Cube_ prefab in the Project pane to select it. Then click a second time to rename it(can press F2 after it's selected to rename it) and then change the name to _Cube Prefab_.
+
+__2.__ Now that prefab is set up, the instance of the cube in the scene is not needed any more. Click _Cube_ in the Hierarchy pane (not the Project Pane!). Choose _Edit > Delete_ from the menu bar; the cube disappears from teh scene.
+
+__3.__ Save the Scene by choosing _File > Save_ from the Unity menu.
+
+__4.__ Choose _Assets > Create > C# Script_ from the main menu bar and rename the newly created script _CubeSpawner_.
+
+__5.__ Double-click the _CubeSpawner_ script to open VS
+
+```ruby
+  using System.Collections;
+  using System.Collectoins.Generic;
+  Using UnityEngine;
+  
+  public class CubeSpawner : MonoBehaviour {
+    public GameObject cubePrefabVar;
+  
+    // Start is called before the first frame update
+    void Start() {
+      Instantiate (cubePreFabVar);
+    }
+    
+    // Update is capped once per frame
+    void Update() {}
+  
+  }
+```
+
+__6.__ Save the CubeSpawner script in VS (_File > Save_) and return to unity.
+
+__7.__ In Unity, drag the _CubeSpawner_ script over to _Main Camera_
+
+__8.__ Click _Main Camera_ in the Hierarchy pane.
+
+__9.__ In the Inspactor, __cubePreFabVar__ currently has no value assigned. Click the circular target to the right of the cubePrefab variabel value to open the _Select GameObject_ dialog box from can select a prefab to assign to this variable
+* __Make sure that the _Assets_ tab is selected.__ (The Assets tab shows GameObject in Project pane, where as the SCene tab shows GameObjects in the Hierarchy.)
+* __Double-click Cube Prefab to select it__
+
+__10.__ In the inspector that the value of __cubePreFabCar__ is _Cube Prefab_ (and choosing it from the Assets tab ensured it was one in the Project pane). To double-check this, click the value _Cube Prefab_ in the Inspector, and _Cube Prefab_ is highlighted in yellow in the Project pane.
+
+__11.__ Click the _Play_ button. A single _Cube Prefab(Clone)_ GameObject is instantiated in the Hierarchy. The __Start()__ function is called once, and it creates a single instance (or clone) of the Cube Prefab.
+
+__12.__ Switch to VS and edit the code:
+* Comment out the __Instantiate(cubePreFabVar)__ call on line 12 in the __Start()__ function.
+* Add an __Instantiate(cubePreFabVar);__ statement to line 18 in the __Update()__ function
+
+```ruby
+  using System.Collections;
+  using System.Collectoins.Generic;
+  Using UnityEngine;
+  
+  public class CubeSpawner : MonoBehaviour {
+    public GameObject cubePrefabVar;
+  
+    // Use this for initialization
+    void Start() {
+      // Instantiate (cubePreFabVar);
+    }
+    
+    // Update is capped once per frame
+    void Update() {
+      Instantiate (cubePreFabVar);
+    }
+  
+  }
+```
+
+__13.__ Save the CubeSpawner script, and switch back to Unity
+
+__14.__ Save Scene, and then click _Play_
